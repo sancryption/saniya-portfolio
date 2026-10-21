@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Shaikh Saniya — Second-year BSc IT student, aspiring developer, and creative technologist exploring software engineering, web development, and interactive digital experiences.">
+  <meta name="keywords" content="Shaikh Saniya, Portfolio, BSc IT, Web Developer, Software Engineering, Frontend, React, TypeScript, Python">
+  <meta name="author" content="Shaikh Saniya">
+  <meta name="theme-color" content="#0d1b14">
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shaikh Saniya | Personal Portfolio & Projects">
+  <meta property="og:description" content="Second-year BSc IT student exploring software development, web technologies, and interactive digital experiences.">
+  <meta property="og:url" content="https://sancryption.github.io/saniya-portfolio/">
+
+  <title>Shaikh Saniya — Portfolio | Aspiring Developer & Creative Technologist</title>
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessible Skip-to-Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Sticky Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Shaikh Saniya Home">
+        <span class="logo-text">saniya</span><span class="logo-dot" aria-hidden="true">.</span>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Button -->
+      <button 
+        id="mobile-nav-toggle" 
+        class="nav-toggle" 
+        aria-expanded="false" 
+        aria-controls="primary-navigation" 
+        aria-label="Toggle navigation menu"
+        type="button"
+      >
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <!-- Primary Navigation -->
+      <nav id="primary-navigation" class="primary-nav" aria-label="Main Navigation">
+        <ul class="nav-list" role="list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-indicator" aria-hidden="true"></span>
+            <span class="badge-text">BSc IT Student &bull; Second Year</span>
+          </div>
+
+          <p class="hero-intro">Hello, I'm Shaikh Saniya</p>
+          
+          <h1 id="hero-heading" class="hero-title">
+            Building ideas into <span class="highlight-text">digital experiences.</span>
+          </h1>
+          
+          <p class="hero-description">
+            I'm Shaikh Saniya, a second-year BSc IT student exploring software development, 
+            web technologies, and interactive experiences. I enjoy learning how things work 
+            and turning ideas into meaningful projects.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Projects</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+
+          <!-- Hero Quick Highlights -->
+          <div class="hero-stats" role="region" aria-label="Quick Highlights">
+            <div class="stat-item">
+              <span class="stat-label">Focus</span>
+              <span class="stat-value">Full-Stack &amp; Creative Tech</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-label">Role</span>
+              <span class="stat-value">Student &bull; Aspiring Developer</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-label">Location</span>
+              <span class="stat-value">Open to Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bespoke Visual Element: Digital System & Code Composition -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="system-card">
+            <div class="system-card-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="system-card-title">saniya-runtime.ts</div>
+              <div class="system-card-tag">active</div>
+            </div>
+
+            <div class="system-card-body">
+              <div class="code-line"><span class="code-keyword">interface</span> <span class="code-type">DeveloperProfile</span> {</div>
+              <div class="code-line indent"><span class="code-prop">name</span>: <span class="code-string">"Shaikh Saniya"</span>;</div>
+              <div class="code-line indent"><span class="code-prop">academicLevel</span>: <span class="code-string">"BSc IT &bull; Year 2"</span>;</div>
+              <div class="code-line indent"><span class="code-prop">currentFocus</span>: [</div>
+              <div class="code-line indent-2"><span class="code-string">"Web Applications"</span>,</div>
+              <div class="code-line indent-2"><span class="code-string">"Software Systems"</span>,</div>
+              <div class="code-line indent-2"><span class="code-string">"Interactive 3D"</span></div>
+              <div class="code-line indent">];</div>
+              <div class="code-line indent"><span class="code-prop">status</span>: <span class="code-string">"Building &amp; learning daily"</span>;</div>
+              <div class="code-line">}</div>
+              
+              <div class="code-divider"></div>
+              
+              <div class="system-metrics">
+                <div class="metric-row">
+                  <span class="metric-label">Signal Detection</span>
+                  <span class="metric-bar"><span class="bar-fill fill-90"></span></span>
+                  <span class="metric-val">SafetyReady</span>
+                </div>
+                <div class="metric-row">
+                  <span class="metric-label">UI Engineering</span>
+                  <span class="metric-bar"><span class="bar-fill fill-85"></span></span>
+                  <span class="metric-val">Lotus Next</span>
+                </div>
+                <div class="metric-row">
+                  <span class="metric-label">3D Atmosphere</span>
+                  <span class="metric-bar"><span class="bar-fill fill-80"></span></span>
+                  <span class="metric-val">Anatomy of Memory</span>
+                </div>
+                <div class="metric-row">
+                  <span class="metric-label">Safety Workflows</span>
+                  <span class="metric-bar"><span class="bar-fill fill-85"></span></span>
+                  <span class="metric-val">AURA Co-Pilot</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="system-card-footer">
+              <span class="sys-dot"></span>
+              <span class="sys-text">Terminal ready &bull; Zero external runtime errors</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 01: About Me -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">01 / ABOUT ME</p>
+          <h2 id="about-heading" class="section-title">Curious about technology. Driven to create.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p class="about-lead">
+              I am a second-year Bachelor of Science in Information Technology (BSc IT) student passionate about understanding 
+              how digital architectures work from the ground up.
+            </p>
+            <p class="about-text">
+              My curiosity spans modern web development, software engineering principles, interactive applications, 
+              and creative technology. Rather than just reading theories, I believe in actively learning by building 
+              hands-on projects—whether that involves designing regulatory drug safety signal models, customizing open-source 
+              chat interfaces, crafting atmospheric 3D game narratives, or architecting field safety supervisor dashboards.
+            </p>
+            <p class="about-text">
+              Every project is an opportunity to expand my toolkit, write cleaner code, solve practical challenges, 
+              and explore the intersection of functionality and thoughtful design.
+            </p>
+
+            <div class="philosophy-tags" aria-label="Guiding Principles">
+              <span class="tag">Curiosity First</span>
+              <span class="tag">Hands-on Practice</span>
+              <span class="tag">Accessible Design</span>
+              <span class="tag">Continuous Growth</span>
+            </div>
+          </div>
+
+          <!-- Profile Facts Card -->
+          <aside class="about-profile-card" aria-label="Shaikh Saniya Profile Summary">
+            <div class="profile-card-header">
+              <div class="profile-avatar-badge" aria-hidden="true">SS</div>
+              <div>
+                <h3 class="profile-name">Shaikh Saniya</h3>
+                <p class="profile-role">IT Student &bull; Aspiring Developer</p>
+              </div>
+            </div>
+
+            <div class="profile-divider" aria-hidden="true"></div>
+
+            <dl class="profile-meta-list">
+              <div class="meta-item">
+                <dt class="meta-label">Education</dt>
+                <dd class="meta-value">BSc Information Technology</dd>
+              </div>
+              <div class="meta-item">
+                <dt class="meta-label">Academic Year</dt>
+                <dd class="meta-value">Second Year</dd>
+              </div>
+              <div class="meta-item">
+                <dt class="meta-label">Professional Identity</dt>
+                <dd class="meta-value">IT Student | Aspiring Developer | Creative Technologist</dd>
+              </div>
+              <div class="meta-item">
+                <dt class="meta-label">Key Interests</dt>
+                <dd class="meta-value">Software Development, Web Technologies, Interactive Experiences</dd>
+              </div>
+            </dl>
+
+            <div class="profile-card-status">
+              <span class="status-indicator-dot" aria-hidden="true"></span>
+              <span>Available for student projects &amp; collaborative learning</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Skills & Technologies -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">02 / MY TOOLKIT</p>
+          <h2 id="skills-heading" class="section-title">Technologies I'm exploring.</h2>
+          <p class="section-subtitle">
+            Tools, languages, and frameworks I have studied, applied in projects, or am actively practising at a student level.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1: Web Development -->
+          <article class="skill-category-card">
+            <div class="card-icon-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+            <p class="category-desc">Crafting responsive, accessible, and structured user interfaces for the modern web.</p>
+            <ul class="technology-list" role="list">
+              <li class="tech-pill">
+                <span class="tech-name">HTML</span>
+                <span class="tech-note">Semantic &amp; A11y</span>
+              </li>
+              <li class="tech-pill">
+                <span class="tech-name">CSS</span>
+                <span class="tech-note">Grid, Flexbox, Variables</span>
+              </li>
+              <li class="tech-pill">
+                <span class="tech-name">JavaScript</span>
+                <span class="tech-note">ES6+, DOM, Fetch</span>
+              </li>
+              <li class="tech-pill">
+                <span class="tech-name">React</span>
+                <span class="tech-note">Components &amp; State</span>
+              </li>
+              <li class="tech-pill">
+                <span class="tech-name">TypeScript</span>
+                <span class="tech-note">Type Safety &amp; Interfaces</span>
+              </li>
+              <li class="tech-pill">
+                <span class="tech-name">Vite</span>
+                <span class="tech-note">Build Tooling</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Skill Category 2: Programming & Backend -->
+          <article class="skill-category-card">
+            <div class="card-icon-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Programming &amp; Backend</h3>
+            </div>
+            <p class="category-desc">Building logical problem-solving foundations and backend REST service endpoints.</p>
+            <ul class="technology-list" role="list">
+              <li class="tech-pill">
+                <span class="tech-name">C Programming</span>
+                <span class="tech-note">Core Fundamentals &amp; Logic</span>
+              </li>
+              <li class="tech-pill">
+                <span class="tech-name">Python</span>
+                <span class="tech-note">Scripting &amp; Data Analysis</span>
+              </li>
+              <li class="tech-pill">
+                <span class="tech-name">FastAPI</span>
+                <span class="tech-note">RESTful Endpoints</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Skill Category 3: Databases -->
+          <article class="skill-category-card">
+            <div class="card-icon-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Databases</h3>
+            </div>
+            <p class="category-desc">Structuring relational schemas, querying datasets, and managing data integrity.</p>
+            <ul class="technology-list" role="list">
+              <li class="tech-pill">
+                <span class="tech-name">SQL</span>
+                <span class="tech-note">Queries &amp; Joins</span>
+              </li>
+              <li class="tech-pill">
+                <span class="tech-name">SQLite</span>
+                <span class="tech-note">Embedded Relational Storage</span>
+              </li>
+              <li class="tech-pill">
+                <span class="tech-name">Database Systems</span>
+                <span class="tech-note">DBMS Principles &amp; Schema Design</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Skill Category 4: Tools & Workflow -->
+          <article class="skill-category-card">
+            <div class="card-icon-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                  <line x1="6" y1="9" x2="6" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Tools &amp; Workflow</h3>
+            </div>
+            <p class="category-desc">Collaborating on codebases, tracking versions, and deploying web projects.</p>
+            <ul class="technology-list" role="list">
+              <li class="tech-pill">
+                <span class="tech-name">Git</span>
+                <span class="tech-note">Version Control &amp; Branching</span>
+              </li>
+              <li class="tech-pill">
+                <span class="tech-name">GitHub</span>
+                <span class="tech-note">Collaboration &amp; Pages Hosting</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Featured Projects -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">03 / SELECTED WORK</p>
+          <h2 id="projects-heading" class="section-title">Projects that turn ideas into reality.</h2>
+          <p class="section-subtitle">
+            A curated showcase of real projects spanning drug safety signal detection, open-source interface customization, 3D interactive horror storytelling, and field safety software.
+          </p>
+        </div>
+
+        <div class="projects-container">
+          
+          <!-- PROJECT 01 — SafetyReady -->
+          <article class="project-card project-safetyready" aria-labelledby="project-1-title">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-number">PROJECT 01</span>
+                <span class="project-category">Drug Safety &amp; Regulatory Readiness</span>
+              </div>
+
+              <h3 id="project-1-title" class="project-title">SafetyReady</h3>
+
+              <p class="project-desc">
+                SafetyReady is a drug safety signal detection and regulatory submission readiness project developed for the IBM Bob AI Innovation Hackathon.
+                The application analyses safety reports, identifies potential safety signals using Proportional Reporting Ratios (PRR), 
+                and evaluates submission readiness against ICH Common Technical Document (CTD) requirements.
+              </p>
+
+              <div class="project-tech" aria-label="Technologies used in SafetyReady">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+
+              <div class="project-actions">
+                <a 
+                  href="https://github.com/sancryption/bob-ai-hackathon-parallaxa" 
+                  class="btn btn-outline" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="View SafetyReady repository on GitHub (opens in a new tab)"
+                >
+                  <span>View on GitHub</span>
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M6 3H3C2.44772 3 2 3.44772 2 4V13C2 13.5523 2.44772 14 3 14H12C12.5523 14 13 13.5523 13 13V10M10 2H14M14 2V6M14 2L7 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 01 Bespoke Visual: Pharmaceutical Safety Analytical Panel -->
+            <div class="project-visual visual-safety" aria-hidden="true">
+              <div class="visual-panel">
+                <div class="panel-header">
+                  <div class="panel-title-group">
+                    <span class="panel-dot-indicator"></span>
+                    <span class="panel-title">ICH CTD Compliance &bull; PRR Analysis</span>
+                  </div>
+                  <span class="panel-tag">IBM Bob AI Hackathon</span>
+                </div>
+
+                <div class="panel-metrics-grid">
+                  <div class="panel-metric-box">
+                    <span class="p-label">Signal Detection (PRR)</span>
+                    <span class="p-value">PRR &gt; 2.4</span>
+                    <span class="p-sub positive">&bull; Statistically Significant</span>
+                  </div>
+                  <div class="panel-metric-box">
+                    <span class="p-label">CTD Readiness</span>
+                    <span class="p-value">Module 5.3.5</span>
+                    <span class="p-sub">&bull; Clinical Safety Evaluation</span>
+                  </div>
+                </div>
+
+                <div class="safety-signal-chart">
+                  <div class="chart-row">
+                    <span class="row-label">Adverse Event Signal A</span>
+                    <div class="chart-bar-wrap"><div class="chart-bar fill-alert" style="width: 78%;"></div></div>
+                    <span class="row-val">3.12 PRR</span>
+                  </div>
+                  <div class="chart-row">
+                    <span class="row-label">Adverse Event Signal B</span>
+                    <div class="chart-bar-wrap"><div class="chart-bar fill-moderate" style="width: 46%;"></div></div>
+                    <span class="row-val">1.84 PRR</span>
+                  </div>
+                  <div class="chart-row">
+                    <span class="row-label">Adverse Event Signal C</span>
+                    <div class="chart-bar-wrap"><div class="chart-bar fill-mild" style="width: 24%;"></div></div>
+                    <span class="row-val">0.92 PRR</span>
+                  </div>
+                </div>
+
+                <div class="panel-footer-row">
+                  <span>FastAPI + SQLite Engine</span>
+                  <span class="compliance-badge">ICH CTD Formatted</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 — Lotus Next -->
+          <article class="project-card project-lotus" aria-labelledby="project-2-title">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-number">PROJECT 02</span>
+                <span class="project-category">Open-Source Software Development</span>
+              </div>
+
+              <h3 id="project-2-title" class="project-title">Lotus Next</h3>
+
+              <p class="project-desc">
+                Lotus Next is an open-source software development project involving improvements to a chat interface, 
+                including custom message bubble colours and global accent-colour customisation. 
+                Hands-on work focused on frontend UI development, interface theme token customisation, and practical software iteration.
+              </p>
+
+              <div class="project-tech" aria-label="Technologies used in Lotus Next">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">GitHub</span>
+              </div>
+
+              <div class="project-actions">
+                <a 
+                  href="https://github.com/bigduu/lotus-next" 
+                  class="btn btn-outline" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Explore Lotus Next repository on GitHub (opens in a new tab)"
+                >
+                  <span>Explore Repository</span>
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M6 3H3C2.44772 3 2 3.44772 2 4V13C2 13.5523 2.44772 14 3 14H12C12.5523 14 13 13.5523 13 13V10M10 2H14M14 2V6M14 2L7 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 02 Bespoke Visual: Chat Bubble & Theme Customization UI -->
+            <div class="project-visual visual-lotus" aria-hidden="true">
+              <div class="chat-mockup-panel">
+                <div class="chat-header">
+                  <div class="chat-user">
+                    <span class="chat-avatar">LN</span>
+                    <div>
+                      <span class="chat-name">Lotus Assistant</span>
+                      <span class="chat-state">Custom Theme Active</span>
+                    </div>
+                  </div>
+                  <div class="theme-picker-preview">
+                    <span class="color-dot active-lime"></span>
+                    <span class="color-dot cyan"></span>
+                    <span class="color-dot purple"></span>
+                  </div>
+                </div>
+
+                <div class="chat-stream">
+                  <div class="chat-bubble incoming">
+                    <p>How would you like to configure your conversation accent colors?</p>
+                    <span class="bubble-time">10:42 AM</span>
+                  </div>
+                  <div class="chat-bubble outgoing custom-bubble">
+                    <p>Apply global accent token #A3E635 for message highlights and custom borders.</p>
+                    <span class="bubble-time">10:43 AM</span>
+                  </div>
+                  <div class="chat-bubble incoming">
+                    <div class="chat-token-pill">Theme variable updated: --accent-active</div>
+                  </div>
+                </div>
+
+                <div class="chat-input-preview">
+                  <span>Type an interaction message...</span>
+                  <span class="send-btn-mock"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03 — The Anatomy of a Memory -->
+          <article class="project-card project-anatomy" aria-labelledby="project-3-title">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-number">PROJECT 03</span>
+                <span class="project-category">3D Game Development</span>
+              </div>
+
+              <h3 id="project-3-title" class="project-title">The Anatomy of a Memory</h3>
+
+              <p class="project-desc">
+                An atmospheric 3D psychological survival-horror experience set in an abandoned biological research facility. 
+                Built around searching for a missing sister, players explore decaying laboratory chambers, solve environmental puzzles, 
+                and uncover an unsettling reality about imitation, memory, and personal identity.
+              </p>
+
+              <div class="project-tech" aria-label="Technologies used in The Anatomy of a Memory">
+                <span class="tech-tag">Web 3D</span>
+                <span class="tech-tag">Interactive Storytelling</span>
+                <span class="tech-tag">Audio &amp; Atmosphere</span>
+                <span class="tech-tag">RUN.world Engine</span>
+              </div>
+
+              <div class="project-actions">
+                <a 
+                  href="https://w.run/sannie/the-anatomy-of-a-memory" 
+                  class="btn btn-outline" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Play The Anatomy of a Memory on RUN.world (opens in a new tab)"
+                >
+                  <span>Play Game</span>
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M5 3L13 8L5 13V3Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 03 Bespoke Visual: Atmospheric 3D Horror Facility Telemetry -->
+            <div class="project-visual visual-horror" aria-hidden="true">
+              <div class="facility-telemetry-panel">
+                <div class="telemetry-top">
+                  <span class="facility-code">SECTOR 04 &bull; BIOLOGICAL RESEARCH FACILITY</span>
+                  <span class="recording-badge"><span class="rec-dot"></span> LIVE SIGNAL</span>
+                </div>
+
+                <div class="radar-scope">
+                  <div class="pulse-ring ring-1"></div>
+                  <div class="pulse-ring ring-2"></div>
+                  <div class="radar-crosshair"></div>
+                  <div class="blip blip-1"></div>
+                  <div class="blip blip-2"></div>
+                  <div class="radar-readout">ENTITY SIGNAL DETECTED</div>
+                </div>
+
+                <div class="memory-quote">
+                  "Just because something imitates a memory doesn't mean it remembers you."
+                </div>
+
+                <div class="telemetry-footer">
+                  <span>STATUS: ANOMALOUS ACTIVITY</span>
+                  <span>DEPTH: SUB-LEVEL 3</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04 — AURA: Field Safety Co-Pilot -->
+          <article class="project-card project-aura" aria-labelledby="project-4-title">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-number">PROJECT 04</span>
+                <span class="project-category">Field Safety Application</span>
+              </div>
+
+              <h3 id="project-4-title" class="project-title">AURA: Field Safety Co-Pilot</h3>
+
+              <p class="project-desc">
+                A modern field-safety supervisor dashboard and incident management application. 
+                Designed around high-stakes field safety workflows, real-time alert triage, and operational clarity, 
+                demonstrating interface engineering with React, TypeScript, and Vite.
+              </p>
+
+              <div class="project-tech" aria-label="Technologies used in AURA">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">CSS Architecture</span>
+              </div>
+
+              <div class="project-actions">
+                <a 
+                  href="https://aura-field-safety-co-pilottt.onrender.com" 
+                  class="btn btn-outline" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Launch AURA: Field Safety Co-Pilot live demo (opens in a new tab)"
+                >
+                  <span>Launch Live Demo</span>
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M6 3H3C2.44772 3 2 3.44772 2 4V13C2 13.5523 2.44772 14 3 14H12C12.5523 14 13 13.5523 13 13V10M10 2H14M14 2V6M14 2L7 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 04 Bespoke Visual: Supervisor Telemetry & Hazard Dispatch -->
+            <div class="project-visual visual-aura" aria-hidden="true">
+              <div class="supervisor-dashboard-mockup">
+                <div class="aura-nav-bar">
+                  <div class="aura-brand">
+                    <span class="aura-icon"></span>
+                    <span>AURA Supervisor</span>
+                  </div>
+                  <span class="aura-status-pill">Active Shift: Zone B</span>
+                </div>
+
+                <div class="aura-kpi-grid">
+                  <div class="aura-kpi">
+                    <span class="kpi-num">100%</span>
+                    <span class="kpi-label">Safety Compliance</span>
+                  </div>
+                  <div class="aura-kpi">
+                    <span class="kpi-num">04</span>
+                    <span class="kpi-label">Monitored Crews</span>
+                  </div>
+                </div>
+
+                <div class="aura-incident-card">
+                  <div class="incident-header">
+                    <span class="incident-badge low">Routine Check</span>
+                    <span class="incident-time">Just now</span>
+                  </div>
+                  <p class="incident-text">PPE verification protocol completed &bull; Zone 3 site clearance approved.</p>
+                </div>
+
+                <div class="aura-dispatch-row">
+                  <span class="dispatch-label">Telemetric Feed</span>
+                  <span class="dispatch-val">Live &bull; 0 Active Hazards</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Contact Section -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">04 / GET IN TOUCH</p>
+          <h2 id="contact-heading" class="section-title">Let's build something meaningful.</h2>
+          <p class="section-subtitle">
+            I'm always interested in learning, exploring ideas, and connecting with people who enjoy building thoughtful digital experiences.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-details">
+            <h3 class="contact-name">Shaikh Saniya</h3>
+            <p class="contact-qualification">Bachelor of Science in Information Technology (BSc IT) &bull; Second Year</p>
+            <p class="contact-note">
+              Whether you want to discuss web projects, software development ideas, or collaborative learning opportunities, feel free to reach out.
+            </p>
+
+            <div class="contact-links-group">
+              <!-- Copy Email Interactive Control -->
+              <div class="email-copy-wrapper">
+                <a 
+                  href="mailto:saniyarecursion@gmail.com" 
+                  class="btn btn-primary email-btn" 
+                  id="email-link"
+                  aria-label="Send email to Shaikh Saniya (opens default email client)"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span id="displayed-email">saniyarecursion@gmail.com</span>
+                </a>
+
+                <button 
+                  type="button" 
+                  class="btn btn-secondary copy-btn" 
+                  id="copy-email-button"
+                  aria-label="Copy email address to clipboard"
+                  title="Copy email to clipboard"
+                >
+                  <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-btn-text">Copy Email</span>
+                </button>
+              </div>
+
+              <!-- Accessible Live Feedback Region for Clipboard Actions -->
+              <div id="copy-status" class="copy-status-message" role="status" aria-live="polite"></div>
+
+              <!-- Social Profiles (Verified Only) -->
+              <div class="social-links-row">
+                <a 
+                  href="https://github.com/sancryption" 
+                  class="social-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Visit Shaikh Saniya's GitHub Profile (opens in a new tab)"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>github.com/sancryption</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <a href="#hero" class="brand-logo footer-logo" aria-label="Back to top via Logo">
+          <span class="logo-text">saniya</span><span class="logo-dot" aria-hidden="true">.</span>
+        </a>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <ul class="footer-links" role="list">
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="#header" class="back-to-top" id="back-to-top-link" aria-label="Scroll back to top of page">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <div class="footer-bottom">
+        <p class="copyright-notice">
+          &copy; <span id="current-year">2026</span> Shaikh Saniya. Crafted with semantic HTML, modern CSS, and JavaScript.
+        </p>
+        <p class="footer-course-note">
+          Coursera &bull; Introduction to Web Development Final Project
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
